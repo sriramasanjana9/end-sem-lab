@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Homepage</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Banner Section */
+        .banner {
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url("https://images.unsplash.com/photo-1562774053-701939374585")
+            center/cover no-repeat;
+
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #003366;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Course Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0055aa;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsive Design */
+        @media screen and (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .banner {
+                padding: 60px 15px;
+            }
+
+            .banner h1 {
+                font-size: 28px;
+            }
+
+            .banner p {
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 8px 4px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .banner h1 {
+                font-size: 23px;
+            }
+
+            table {
+                font-size: 11px;
+            }
+
+            th, td {
+                padding: 6px 2px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>ABC College</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner" id="home">
+        <h1>Welcome to ABC College</h1>
+        <p>Building Your Future Through Quality Education</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>Our Courses</h2>
+
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Course Name</th>
+                    <th>Duration</th>
+                    <th>Fees</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>B.Sc Computer Science</td>
+                    <td>3 Years</td>
+                    <td>₹30,000</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>B.Com</td>
+                    <td>3 Years</td>
+                    <td>₹25,000</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>B.A English</td>
+                    <td>3 Years</td>
+                    <td>₹20,000</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>BBA</td>
+                    <td>3 Years</td>
+                    <td>₹35,000</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                <input type="text"
+                       placeholder="Enter Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Enter Your Email"
+                       required>
+
+                <input type="tel"
+                       placeholder="Enter Your Phone Number">
+
+                <textarea rows="5"
+                          placeholder="Enter Your Message"
+                          required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+        <p>Email: info@abccollege.edu | Phone: 9876543210</p>
+    </footer>
+
+</body>
+</html>
